@@ -178,11 +178,11 @@ p {
     margin-bottom: -15px;
 }
 
-.contact a:link {
+.kont:link {
     color: #64ffda;
 }
 
-.contact a p:hover {
+.kont:hover {
     color: #a7ffeb;
 }
 
