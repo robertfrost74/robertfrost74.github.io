@@ -23,18 +23,19 @@
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">Om</a></li>
-                <li><a href="#">Fakta</a></li>
-                <li><a href="#">Intressen</a></li>
-                <li><a href="#">Mål</a></li>
-                <li><a href="#">Kontakt</a></li>
-                <li><a href="#">Nedladdning</a></li>
+                <li><a href="#om">Om</a></li>
+                <li><a href="#fakta">Fakta</a></li>
+                <li><a href="#information">Information</a></li>
+                <li><a href="#cv">CV</a></li>               
+                <li><a href="#kontakt">Kontakt</a></li>
             </ul>
 
             <ul id="nav-mobile" class="side-nav">
-                <li><a href="#">Om</a></li>
-                <li><a href="#">Kontakt</a></li>
-                <li><a href="#">Nedladdning</a></li>
+                <li><a href="#om">Om</a></li>
+                <li><a href="#fakta">Fakta</a></li>
+                <li><a href="#information">Information</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
@@ -52,7 +53,7 @@
     </div>
 
     <div class="container">
-        <div class="section om">
+        <div class="section om" id="om">
             <div class="row">
                 <div class="col s12 center">
                     <h3><i class="mdi-content-send brown-text"></i></h3>
@@ -64,11 +65,11 @@
         </div>
     </div>
 
-    <div class="parallax-container valign-wrapper">
+    <div class="parallax-container valign-wrapper" id="fakta">
         <div class="section no-pad-bot">
-            <div class="container about">
-                <h3>FAKTA</h3>
-                <h4><b>Lite information om mig</b></h4>
+            <div class="container fakta">
+                <h3 >FAKTA</h3>
+                <h4>Lite information om mig</h4>
                 <div class="row">
                     <div class="col s12 m4 l4">
                         <div class="card">
@@ -127,13 +128,16 @@
         <div class="section">
 
             <!--   Icon Section   -->
-            <div class="row">
+            <div class="row" id="information">
                 <div class="col s12 m4">
                     <div class="icon-block">
                         <h2 class="center green-text"><i class="material-icons">rowing</i></h2>
                         <h5 class="center">Intressen</h5>
 
-                        <p class="light">Jag har alltid varit en sportig person som hållit på med dom flesta idrotter, där golf ligger i topp.  <br> Musik ligger mig varmt om hjärtat. Har spelat i band sedan jag var 12 år. Jag skriver musik, sjunger och spelar gitarr.</p>
+                        <p class="light">Jag har alltid varit en sportig person som hållit på
+                                        med dom flesta idrotter, där golf ligger i topp.  <br> 
+                                        Musik ligger mig varmt om hjärtat. Har spelat i band sedan jag var 12 år. 
+                                        Jag skriver musik, sjunger och spelar gitarr.</p>
                     </div>
                 </div>
 
@@ -142,16 +146,24 @@
                         <h2 class="center brown-text"><i class="material-icons">trending_up</i></h2>
                         <h5 class="center">Mål</h5>
 
-                        <p class="light">Jag vill gå från ide' till verklighet. Just nu tycker jag att Angular 2 tillsammans med materialize är effektivt, men utvecklingen går snabbt. Jag vill hålla mig ajour med den senaste tekniken för att kunna skapa den snyggaste och bästa mjukvaran.</p>
+                        <p class="light">
+                                        Just nu tycker jag att Angular 2 tillsammans med
+                                        materialize är effektivt, men utvecklingen går snabbt.
+                                        Jag vill hålla mig ajour med den senaste tekniken
+                                        för att kunna skapa mjukvara som sätter användarens 
+                                        upplevelse i centrum.</p>
                     </div>
                 </div>
 
                 <div class="col s12 m4">
                     <div class="icon-block">
                         <h2 class="center blue-text"><i class="material-icons">accessibility</i></h2>
-                        <h5 class="center">Varför anställa mig?</h5>
+                        <h5 class="center">Varför mig?</h5>
 
-                        <p class="light">Ni får en driven medarbetare som strävar efter att hela tiden utvecklas, både med sig själv och företaget. Jag har hög social kompetens och försöker alltid få min omgivning att må bra.</p>
+                        <p class="light">Ni får en driven medarbetare som strävar efter att 
+                                        hela tiden utvecklas, både med sig själv och företaget. 
+                                        Jag har hög social kompetens och försöker alltid få min 
+                                        omgivning att må bra.</p>
                     </div>
                 </div>
             </div>
@@ -159,49 +171,67 @@
         </div>
     </div>
 
-    <div class="parallax-container valign-wrapper">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <div class="row center">
-                    <h5 class="header col s12 light">Kontakt</h5>
-                </div>
-            </div>
-        </div>
+    <div class="parallax-container valign-wrapper" id="kontakt">
+        	<div class="parallax-container valign-wrapper" id="kontakt">
+		<div class="section no-pad-bot">
+			<div class="container">
+				<div class="row center">
+					<h5 class="header col s12 light">Kontakt</h5>
+				</div>
+			</div>
+		</div>
+		<div class="parallax"><img src="domino-163523_1280.jpg" alt="Domino"></div>
+	</div>
+
+	<div class="container contact">
+		<h5>Kontakt</h5>
+		<h6>tack för visat intresse</h6>
+		<hr>
+		<div class="row">
+			<div class="col s12 m6 l6">
+				<div class="row">
+					<form class="col s12">
+						<div class="row">
+							<div class="input-field col s6">
+								<input id="first_name" type="text" class="validate">
+								<label for="first_name">Förnamn</label>
+							</div>
+							<div class="input-field col s6">
+								<input id="last_name" type="text" class="validate">
+								<label for="last_name">Efternamn</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="email" type="email" class="validate">
+								<label for="email">E-Mail</label>
+							</div>
+						</div>
+						<textarea class="materialize-textarea" placeholder="Your Message" required></textarea>
+						<button class="btn waves-effect waves-light" type="submit" name="action">Skicka
+                  <i class="mdi-content-send right"></i>
+                </button>
+					</form>
+				</div>
+			</div>
+			<div class="col s12 m6 l6 contact-holder">
+				<h6 class="mdi-action-home">Adress</h6>
+				<p>Stjärnorpsvägen 45</p>
+                <p>590 77 Vreta Kloster</p>
+				<h6 class="mdi-hardware-phone-android">Telefon</h6>
+				<p>073-687 40 04</p>
+				<h6 class="mdi-action-open-in-browser">CV</h6>
+			</div>
+		</div>
+	</div>
         <div class="parallax"><img src="domino-163523_1280.jpg" alt="Domino"></div>
     </div>
 
     <footer class="page-footer teal">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Company Bio</h5>
-                    <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Settings</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Connect</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+       
         <div class="footer-copyright">
             <div class="container">
-                Made by Robert Frost
+                <p>Robert Frost</p>
             </div>
         </div>
     </footer>

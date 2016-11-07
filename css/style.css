@@ -70,7 +70,7 @@ p {
 @media only screen and (max-width: 992px) {
     .parallax-container .section {
         position: absolute;
-        top: 40%;
+        top: 2%;
     }
     #index-banner .section {
         top: 10%;
@@ -83,12 +83,12 @@ p {
     }
 }
 
-.about .col
+.fakta .col
 {
     margin-bottom: 24px;
 }
 
-.about h3
+.fakta h3
 {
     text-align: center;
     text-transform: uppercase;
@@ -96,7 +96,7 @@ p {
     margin-bottom: 15px;
 }
 
-.about h4
+.fakta h4
 {
     text-align: center;
     text-transform: uppercase;
@@ -104,7 +104,7 @@ p {
     margin-bottom: 40px;
 }
 
-.about h6
+.fakta h6
 {
     text-align: center;
     text-transform: uppercase;
@@ -112,17 +112,17 @@ p {
     margin-bottom: 25px;
 }
 
-.about hr
+.fakta hr
 {
     width: 40px;
     margin-bottom: 45px;
 }
 
-.about a {
+.fakta a {
     text-align: left;
 }
 
-.about .card
+.fakta .card
 {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5)
@@ -136,6 +136,49 @@ p {
     font-size: inherit;
 }
 
+.contact .col
+{
+	margin-bottom: 24px;
+}
+
+.contact h5
+{
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+.contact h6
+{
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 45px;
+}
+
+.contact hr
+{
+	width: 40px;
+	margin-bottom: 45px;
+}
+
+.contact .contact-holder
+{
+	padding-left: 40px;
+	text-align: left;
+}
+
+.contact .contact-holder h6
+{
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+.contact .contact-holder p
+{
+	margin-bottom: 30px;
+}
+
 footer.page-footer {
     margin: 0;
+    text-align: center;
 }
