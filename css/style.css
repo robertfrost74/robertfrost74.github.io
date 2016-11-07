@@ -178,6 +178,14 @@ p {
     margin-bottom: -15px;
 }
 
+.contact a:link {
+    color: #64ffda;
+}
+
+.contact a p:hover {
+    color: #a7ffeb;
+}
+
 footer.page-footer {
     margin: 0;
     text-align: center;
