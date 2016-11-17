@@ -10,13 +10,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Stalemate" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="/bower_components/animate.css/animate.min.css">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/stylesheet_fonts.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body>
-   <div class="top"></div>
+    <div class="top"></div>
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
             <ul class="right hide-on-med-and-down">
@@ -63,11 +64,11 @@
     <div class="parallax-container valign-wrapper" id="fakta">
 
 
-        
+
 
         <div class="container fakta">
-        <h3 id="faktahead">fakta</h3>
-           
+            <h3 id="faktahead">fakta</h3>
+
             <div class="row fakta">
                 <div class="col s12 m4 l4">
                     <h6><b>Utbildning</b></h6>
@@ -134,10 +135,12 @@
                             Just nu tycker jag att Angular 2 tillsammans med materialize funkar bra, men utvecklingen går snabbt. Jag vill hålla mig ajour med den senaste tekniken för att kunna skapa mjukvara som sätter användarens upplevelse i centrum.</p>
                     </div>
                 </div>
-
+               
                 <div class="col s12 m4">
                     <div class="icon-block">
-                        <h2 class="center blue-text"><i class="material-icons">accessibility</i></h2>
+                        <h2 class="center blue-text">
+                        <i class="material-icons" id="jag">accessibility</i>
+                        </h2>
                         <h5 class="center">Varför mig?</h5>
 
                         <p class="light">Ni får en driven medarbetare som strävar efter att hela tiden utvecklas, både med sig själv och företaget. Jag har hög social kompetens och försöker alltid få min omgivning att må bra.</p>
@@ -157,9 +160,13 @@
                     <p>Stjärnorpsvägen 45</p>
                     <p>590 77 Vreta Kloster</p>
                     <h6>Telefon</h6>
-                    <a class="kont" href="tel:0736874004"><p>073-687 40 04</p></a>
+                    <a class="kont" href="tel:0736874004">
+                        <p>073-687 40 04</p>
+                    </a>
                     <h6>E-mail</h6>
-                    <a class="kont" href="mailto:robfro@me.com"><p>robfro@me.com</p></a>
+                    <a class="kont" href="mailto:robfro@me.com">
+                        <p>robfro@me.com</p>
+                    </a>
                     <a href="img/cv_robert_frost.pdf" class="waves-effect waves-light btn"><i class="material-icons left">backup</i>CV</a>
                 </div>
             </div>
@@ -179,6 +186,8 @@
 
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/bower_components/jQuery-viewport-checker/dist/jquery.viewportchecker.min.js"></script>
+    
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
 

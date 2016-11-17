@@ -2,7 +2,11 @@
   $(function(){
 
     $('.button-collapse').sideNav();
-    $('.parallax').parallax();
+    $('.parallax').parallax(); 
+    $('.row').addClass("hidden").viewportChecker({
+    classToAdd: 'visible animated fadeIn',
+    offset: 100});
+      
     $(window).scroll(function(){
     var scrolled = $(window).scrollTop();
     if (scrolled > 200) $('.top').fadeIn('slow');

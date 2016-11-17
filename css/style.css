@@ -2,6 +2,13 @@ body {
     font-family: 'Lato', arial;  
 }
 
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
+}
+
 .top {
   position:fixed;
   bottom: 0px;
@@ -119,18 +126,49 @@ p {
     text-transform: uppercase;
     font-size: 18px;
     margin-bottom: 25px;
-    
+}
 
+#jag {
+  border-radius: 50%;
+  -webkit-animation: rota 5s ease-in-out infinite;
+  -moz-animation:    rota 1s ease-in-out infinite;
+  -ms-animation:     rota 1s ease-in-out infinite;
+  -o-animation:      rota 1s ease-in-out infinite;
+  animation:         rota 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes rota {
+    0% { -webkit-transform: rotate(0deg);}
+    30% { -webkit-transform: rotate(20deg);}
+    80% { -webkit-transform: rotate(-10deg);}
+    100% { -webkit-transform: rotate(0deg);}
+}
+
+@-moz-keyframes rota {
+    0% {-moz-transform: rotate(0deg);}
+    30% {-moz-transform: rotate(20deg);}
+    80% {-moz-transform: rotate(-10deg);}
+    100% {-moz-transform: rotate(0deg);}
+}
+
+@-o-keyframes rota {
+    0% {-o-transform: rotate(0deg);}
+    30% {-o-transform: rotate(20deg);}
+    80% {-o-transform: rotate(-10deg);}
+    100% {-o-transform: rotate(0deg);}
+}
+
+@keyframes rota {
+    0% {transform: rotate(0deg);}
+    30% {transform: rotate(20deg);}
+    80% {transform: rotate(-10deg);}
+    100% {transform: rotate(0deg);}
 }
 
 #informationhead {
     text-transform: uppercase;
     font-weight: 900;
     color: #424242;
-}
-
-.icon-block {
-    padding: 0 15px;
 }
 
 .icon-block .material-icons {
