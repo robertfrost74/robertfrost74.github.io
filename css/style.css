@@ -2,20 +2,29 @@ body {
     font-family: 'Lato', arial;  
 }
 
+.top {
+  position:fixed;
+  bottom: 0px;
+  right:0px;
+  padding:20px;
+  display:none;
+  cursor: pointer;
+}
+.top:after {
+  content: '⬆';
+  color: #d0d0d0;
+  position: absolute; 
+  bottom:5px;
+  right: 30px;
+  font-size: 30px;
+}
+
 nav ul a {
     color: #444;
 }
 
-p {
-    line-height: 2rem;
-}
-
-.button-collapse {
-    color: #26a69a;
-}
-
 .parallax-container {
-    min-height: 500px;
+    min-height: 480px;
     line-height: 0;
     height: auto;
     color: rgba(255, 255, 255, .9);
@@ -60,7 +69,7 @@ p {
 	padding: 10px;
     padding-left: 20%;
 	display: inline-block;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 }
 
 .parallax-container .section {
@@ -83,6 +92,10 @@ p {
     }
 }
 
+p {
+    line-height: 2rem;
+}
+
 .container.fakta {
     margin-top: 20px
 }
@@ -100,14 +113,6 @@ p {
     margin-bottom: 40px;
 }
 
-.fakta h4
-{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 18px;
-    margin-bottom: 40px;
-}
-
 .fakta h6
 {
     text-align: center;
@@ -116,22 +121,6 @@ p {
     margin-bottom: 25px;
     
 
-}
-
-.fakta hr
-{
-    width: 40px;
-    margin-bottom: 45px;
-}
-
-.fakta a {
-    text-align: left;
-}
-
-.fakta .card
-{
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5)
 }
 
 #informationhead {
