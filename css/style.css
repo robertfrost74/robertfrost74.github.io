@@ -30,6 +30,10 @@ nav ul a {
     color: #444;
 }
 
+.button-collapse {
+  color: #26a69a;
+}
+
 .parallax-container {
     min-height: 480px;
     line-height: 0;
@@ -130,7 +134,7 @@ p {
 
 #jag {
   border-radius: 50%;
-  -webkit-animation: rota 5s ease-in-out infinite;
+  -webkit-animation: rota 4s ease-in-out infinite;
   -moz-animation:    rota 1s ease-in-out infinite;
   -ms-animation:     rota 1s ease-in-out infinite;
   -o-animation:      rota 1s ease-in-out infinite;
