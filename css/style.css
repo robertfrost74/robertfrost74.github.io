@@ -135,10 +135,10 @@ p {
 #jag {
   border-radius: 50%;
   -webkit-animation: rota 4s ease-in-out infinite;
-  -moz-animation:    rota 1s ease-in-out infinite;
-  -ms-animation:     rota 1s ease-in-out infinite;
-  -o-animation:      rota 1s ease-in-out infinite;
-  animation:         rota 1s ease-in-out infinite;
+  -moz-animation:    rota 4s ease-in-out infinite;
+  -ms-animation:     rota 4s ease-in-out infinite;
+  -o-animation:      rota 4s ease-in-out infinite;
+  animation:         rota 4s ease-in-out infinite;
 }
 
 @-webkit-keyframes rota {
