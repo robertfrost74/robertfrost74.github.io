@@ -1,204 +1,950 @@
+
 <!DOCTYPE html>
-<html lang="sv">
-
+<html lang="en-US">
 <head>
-    <title>Robert Frost | Creative Developer</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Robert Frost | Creative Web Developer</title>
+	<meta name="description" content="Robert Frost">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="https://via.placeholder.com/32x32">
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Stalemate" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
-    <link rel="stylesheet" href="/bower_components/animate.css/animate.min.css">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" />
-    <link href="css/style.css" type="text/css" rel="stylesheet" />
-    <link href="css/stylesheet_fonts.css" type="text/css" rel="stylesheet" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/all.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/slick.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/simplebar.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
 <body>
-    <div class="top"></div>
-    <nav class="white">
-        <div class="nav-wrapper container">
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#om">Om</a></li>
-                <li><a href="#fakta">Fakta</a></li>
-                <li><a href="#information">Information</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
 
-            <ul id="nav-mobile" class="side-nav">
-                <li><a href="#om">Om</a></li>
-                <li><a href="#fakta">Fakta</a></li>
-                <li><a href="#information">Information</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-        </div>
-    </nav>
+<!-- preloader -->
+<div id="preloader">
+	<div class="outer">
+		<div class="spinner">
+			<div class="dot1"></div>
+			<div class="dot2"></div>
+		</div>
+	</div>
+</div>
 
+<!-- site wrapper -->
+<div class="site-wrapper">
 
-    <div id="index-banner" class="parallax-container">
-        <div class="section no-pad-bot">
-            <div class="intro z-depth-1">
-                <h1 class="white-text text-lighten-5" id="headline">Robert Frost</h1>
-                <h5 class="white-text text-lighten-5">Kreativ utvecklare</h5>
-            </div>
-        </div>
-        <div class="parallax"><img src="img/rob_Idre.jpg" alt="rob_Idre"></div>
-    </div>
+	<!-- mobile header -->
+	<div class="mobile-header py-2 px-3 mt-4">
+		<button class="menu-icon mr-2">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<a href="index.html" class="logo"><img src="images/rob_Idre.jpg" alt="Robert Frost" /></a>
+		<a href="index.html" class="site-title dot ml-2">Robert Frost</a>
+	</div>
 
-    <!-- <div class="container">
-        <div class="section om" id="om">
-            <div class="row">
-                <div class="col s12 center">
-                    <h3><i class="mdi-content-send brown-text"></i></h3>
-                    <h4>Vem är jag?</h4>
-                    <p class="left-align light">Jag är en positiv och nyfiken person som tycker om att jobba med
-                        människor. I mitt arbetsliv har jag jobbat nära både kunder och arbetskollegor. Jag tycker det
-                        är inspirerande med ansvar och att driva projekt i mål. Jag har jobbat reklambyrå, tryckeri och
-                        inhouse-byrå har jag utvecklat min förmåga att jobba effektivt och noggrant med korta deadlines.
-                        Min grafiska kunskap tillsammans med mjukvaruutveckling har gett mig en bra grund att skapa
-                        användarvänlig och snygg programvara.</p>
-                </div>
-            </div>
-        </div>
-    </div> -->
+	<!-- header -->
+	<header class="left float-left shadow-dark" id="header">
+		<button type="button" class="close" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		<div class="header-inner d-flex align-items-start flex-column">
+			<a href="index.html"><img src="images/rob_Idre_mini.jpg" alt="Robert Frost" /></a>
+			<a href="index.html" class="site-title dot mt-3">Robert Frost</a>
+			<span class="site-slogan">Creative Web Developer</span>
+			
+			<!-- navigation menu -->
+			<nav>
+				<ul class="vertical-menu scrollspy">
+					<li><a href="#home" class="active"><i class="icon-home"></i>Hem</a></li>
+					<li><a href="#about"><i class="icon-user"></i>Vem är jag</a></li>
+<!-- 					<li><a href="#services"><i class="icon-bulb"></i>Services</a></li>
+ -->					<li><a href="#skills"><i class="icon-graduation"></i>Mina färdigheter</a></li>
+					<li><a href="#erfarenhet"><i class="icon-grid"></i>Erfarenhet</a></li>
+					<li><a href="#utbildning"><i class="icon-grid"></i>Utbildning</a></li>
+<!-- 					<li><a href="#blog"><i class="icon-pencil"></i>Blog</a></li>
+ -->					<li><a href="#contact"><i class="icon-phone"></i>Kontakt</a></li>
+				</ul>
+			</nav>
+			
+			<!-- footer -->
+			<div class="footer mt-auto">
 
-<!--     <div class="parallax-container valign-wrapper" id="fakta">
-        <div class="container fakta">
-            <h3 id="faktahead">fakta</h3>
+				<!-- social icons -->
+				<ul class="social-icons list-inline">
+					<li class="list-inline-item"><a href="https://www.facebook.com/robert.frost.716195"><i class="fab fa-facebook-f"></i></a></li>
+					<li class="list-inline-item"><a href="https://www.linkedin.com/in/robert-frost-68536a131/"><i class="fab fa-linkedin"></i></a></li>
+					<!-- <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+					<li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+					<li class="list-inline-item"><a href="#"><i class="fab fa-dribbble"></i></a></li> -->
+				</ul>
+			</div>
+		</div>
+	</header>
 
-            <div class="row fakta">
-                <div class="col s12 m4 l4">
-                    <h6><b>Utbildning</b></h6>
-                    <p class="light"><b>Berghs School of Communication</b>, Gränssnittsdesign/UX</p>
-                    <p class="light"><b>MOLK</b>, YH Mjukvaruutvecklare</p>
-                    <p class="light"><b>Forsbergs skola</b>, Grafisk Formgivning</p>
-                    <p class="light"><b>LIU</b>, Litteraturvetenskap</p>
-                    <p class="light"><b>P18 Gotland</b>, Gruppbefäl</p>
-                    <p class="light"><b>RADa</b>, Data för Industri och Förvaltning</p>
-                    <p class="light"><b>Hultsfreds gymnasium</b>, ekonomi</p>
-                </div>
+	<!-- main content area -->
+	<main class="content float-right">
 
-                <div class="col s12 m4 l4">
-                    <h6><b>Erfarenhet</b></h6>
-                    <p class="light"><b>IFS</b>, Grafisk Designer</p>
-                    <p class="light"><b>Infor</b>, Trainee</p>
-                    <p class="light"><b>Vertel</b>, Trainee</p>
-                    <p class="light"><b>Larsson Offsettryck</b>, Grafiker</p>
-                    <p class="light"><b>Effect Reklambyrå</b>, Grafiker</p>
-                    <p class="light"><b>Tobo Gk</b>, Banarbetare</p>
-                    <p class="light"><b>Trubadur</b></p>
-                </div>
+		<!-- section hero -->
+		<section class="hero background parallax shadow-dark d-flex align-items-center" id="home" data-image-src="images/rob_Idre.jpg">
+			<div class="cta mx-auto mt-2">
+				<h1 class="mt-0 mb-4">Jag är Robert Frost<span class="dot"></span></h1>
+				<p class="mb-4">Även om alla har samma åsikt kan alla ha fel.</p>
+<!-- 				<a href="#" class="btn btn-default btn-lg mr-3"><i class="icon-grid"></i>View Portfolio</a>
+ -->				<div class="spacer d-md-none d-lg-none d-sm-none" data-height="10"></div>
+				<a href="mailto: robfro@me.com" class="btn btn-border-light btn-lg"><i class="icon-envelope"></i>Kontakta mig</a>
+			</div>
+			<div class="overlay"></div>
+		</section>
 
-                <div class="col s12 m4 l4">
-                    <h6><b>Kunskap</b></h6>
-                    <p class="light"><b>Photoshop, Illustrator, Indesign, Sketch, Acrobat, InVision</b></p>
-                    <p class="light"><b>Objektorienterad programmering</b></p>
-                    <p class="light"><b>Java, C#, Python, Javascript, HTML5, CSS3, Bootstrap </b></p>
-                    <p class="light"><b>Node, Express, React, Angular, Vue, Meteor, Django, jQuery, GraphQl, SQL,
-                            MongoDB, Git </b></p>
-                    <p class="light"><b>IntelliJ, Eclipse, Visual Studio, Atom, Brackets, Xcode</b></p>
-                    <p class="light"><b>UX, UI, Agil utvecklingsmetodik, Projektledning, Programutveckling</b></p>
-                </div>
-            </div>
-        </div>
-    </div>
+		<!-- section about -->
+		<section id="about" class="shadow-blue white-bg padding">
+			<h3 class="section-title">Vem är jag</h3>
+			<div class="spacer" data-height="80"></div>
 
+			<div class="row">
+				<div class="col-md-3">
+					<img src="images/rob_Idre.jpg" alt="about" />
+				</div>
+				<div class="col-md-9">
+					<h2 class="mt-4 mt-md-0 mb-4">Hej,</h2>
+					<p class="mb-0">jag är en positiv och nyfiken person som trivs med att jobba tillsammans med
+						människor. I mitt arbetsliv har jag jobbat nära både kunder och arbetskollegor. Jag tycker det
+						är inspirerande med ansvar och att driva projekt i mål. Jag har jobbat på reklambyrå, tryckeri och
+						inhouse-byrå där jag utvecklat min förmåga att jobba effektivt och noggrant med korta deadlines.
+						Min grafiska kunskap tillsammans med mjukvaruutveckling har gett mig en stabil grund att skapa
+						användarvänlig och snygg programvara.</p>
+					<div class="row my-4">
+						<div class="col-md-6">
+							<p class="mb-2">Namn: <span class="text-dark">Robert Frost</span></p>
+							<p class="mb-0">Födelsedag: <span class="text-dark">31 Juli, 1974</span></p>
+						</div>
+						<div class="col-md-6 mt-2 mt-md-0 mt-sm-2">
+							<p class="mb-2">Bor: <span class="text-dark">Berg, Sverige</span></p>
+							<p class="mb-0">Email: <span class="text-dark">robfro@me.com</span></p>
+						</div>
+					</div>
+					<a href="images/cv_robert_frost.pdf" class="btn btn-default mr-3"><i class="icon-cloud-download"></i>CV</a>
+					<a href="mailto: robfro@me.com" class="btn btn-alt mt-2 mt-md-0 mt-xs-2"><i class="icon-envelope"></i>Kontakta mig</a>
+				</div>
+			</div>
+		</section>
 
-    <div class="parallax"><img src="img/old-books-436498_1280.jpg" alt="old-books"></div> -->
-    
+		<!-- section skills -->
+		<section id="skills" class="shadow-blue white-bg padding">
+			<h3 class="section-title">Mina färdigheter</h3>
+			<div class="spacer" data-height="80"></div>
+			
+			<p class="mb-0">Problem blir lösta inte genom vinnande av ny erfarenhet utan genom sammanställning av det sedan länge bekanta.</p>
 
-    <div class="container">
-        <div class="section" id="information">
-            <div class="col s12 center">
-                <h3 id="informationhead">Information</h3>
-            </div>
+			<div class="row mt-5">
 
-            <div class="row">
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center green-text"><i class="material-icons">rowing</i></h2>
-                        <h5 class="center">Intressen</h5>
+				<div class="col-md-6">
+					<!-- skill item -->
+					<div class="skill-item">
+						<div class="skill-info clearfix">
+							<h4 class="float-left mb-3 mt-0">Python</h4>
+							<span class="float-right">75%</span>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75">
+							</div>
+						</div>
+						<div class="spacer" data-height="50"></div>
+					</div>
+				</div>
 
-                        <p class="light">Jag har alltid varit en aktiv person som hållit på med de flesta idrotter, där
-                            golf ligger i topp.
-                            <br> Musik är en stor passion.
-                            Har spelat i flera band där jag gjort musiken, sjungit och spelat gitarr.
-                        </p>
-                    </div>
-                </div>
+				<div class="col-md-6">
+					<!-- skill item -->
+					<div class="skill-item">
+						<div class="skill-info clearfix">
+							<h4 class="float-left mb-3 mt-0">HTML & CSS</h4>
+							<span class="float-right">90%</span>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
+							</div>
+						</div>
+						<div class="spacer" data-height="50"></div>
+					</div>
+				</div>
 
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center brown-text"><i class="material-icons">trending_up</i></h2>
-                        <h5 class="center">Mål</h5>
+				<div class="col-md-6">
+					<!-- skill item -->
+					<div class="skill-item">
+						<div class="skill-info clearfix">
+							<h4 class="float-left mb-3 mt-0">javascript</h4>
+							<span class="float-right">80%</span>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80">
+							</div>
+						</div>
+						<div class="spacer d-md-none d-lg-none" data-height="50"></div>
+					</div>
+				</div>
 
-                        <p class="light">
-                            Fortsätta utvecklas som utvecklare och hålla mig uppdaterad på nya tekniker. Vill skapa
-                            program som ligger i framkant vad gäller design och användarupplevelse.
-                        </p>
-                    </div>
-                </div>
+				<div class="col-md-6">
+					<!-- skill item -->
+					<div class="skill-item">
+						<div class="skill-info clearfix">
+							<h4 class="float-left mb-3 mt-0">Adobe Creative</h4>
+							<span class="float-right">90%</span>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
+							</div>
+						</div>
+					</div>
+				</div>
 
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center blue-text">
-                            <i class="material-icons" id="jag">accessibility</i>
-                        </h2>
-                        <h5 class="center">Varför mig?</h5>
+			</div>
+		</section>
 
-                        <p class="light">Ni får en driven medarbetare som strävar efter att hela tiden utvecklas, både
-                            med sig själv och företaget. Jag har hög social kompetens och försöker alltid få min
-                            omgivning att må bra.</p>
-                    </div>
-                </div>
-            </div>
+		<!-- section facts -->
+		<!-- <section id="facts" class="shadow-dark color-white background parallax padding-50" data-image-src="images/background-1.jpg">
 
-        </div>
-    </div>
+			<div class="row relative z-1">
+				<div class="col-md-3 col-sm-6"> -->
+					<!-- fact item -->
+					<!-- <div class="fact-item text-center">
+						<i class="icon-like icon-circle"></i>
+						<h2 class="count">157</h2>
+						<span>Projects completed</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6"> -->
+					<!-- fact item -->
+					<!-- <div class="fact-item text-center">
+						<i class="icon-cup icon-circle"></i>
+						<h2 class="count">2765</h2>
+						<span>Cup of coffee</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6"> -->
+					<!-- fact item -->
+					<!-- <div class="fact-item text-center">
+						<i class="icon-emotsmile icon-circle"></i>
+						<h2 class="count">350</h2>
+						<span>Happy customers</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6"> -->
+					<!-- fact item -->
+					<!-- <div class="fact-item text-center">
+						<i class="icon-trophy icon-circle"></i>
+						<h2 class="count">29</h2>
+						<span>Awards won</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="overlay"></div>
 
-<!--     <div class="parallax-container valign-wrapper" id="kontakt">
-        <div class="container contact">
-            <h3>Kontakt</h3>
-            <div class="row">
-                <div class="col s6 push-s3 center">
-                    <h6>Adress</h6>
-                    <p>Stjärnorpsvägen 45</p>
-                    <p>590 77 Vreta Kloster</p>
-                    <h6>Telefon</h6>
-                    <a class="kont" href="tel:0736874004">
-                        <p>073-687 40 04</p>
-                    </a>
-                    <h6>E-mail</h6>
-                    <a class="kont" href="mailto:robfro@me.com">
-                        <p>robfro@me.com</p>
-                    </a>
-                    <a href="img/cv_robert_frost.pdf" class="waves-effect waves-light btn"><i
-                            class="material-icons left">backup</i>CV</a>
-                </div>
-            </div>
-        </div>
-        <div class="parallax"><img src="img/domino-163523_1280_dark.jpg" alt="Domino"></div>
-    </div> -->
+		</section> -->
 
-    <footer class="page-footer #424242 grey darken-1">
-        <p>Tack för visat intresse</p>
-        <div class="footer-copyright">
-            <div class="container">
-                <p>Robert Frost</p>
-            </div>
-        </div>
-    </footer>
+		<!-- section services -->
+		<!-- <section id="services" class="shadow-blue white-bg padding">
+			<h3 class="section-title">Services</h3>
+			<div class="spacer" data-height="80"></div>
 
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="/bower_components/jQuery-viewport-checker/dist/jquery.viewportchecker.min.js"></script>
+			<div class="row">
 
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
+				<div class="col-md-4 col-sm-6"> -->
+					<!-- service item -->
+					<!-- <div class="service-item text-center">
+						<i class="icon-globe icon-simple"></i>
+						<h4 class="my-3">Development</h4>
+						<p class="mb-0">Lorem ipsum dolor sit amet consectetuer elit.</p>
+					</div>
+					<div class="spacer" data-height="20"></div>
+				</div>
+
+				<div class="col-md-4 col-sm-6"> -->
+					<!-- service item -->
+					<!-- <div class="service-item text-center">
+						<i class="icon-chemistry icon-simple"></i>
+						<h4 class="my-3">Design</h4>
+						<p class="mb-0">Lorem ipsum dolor sit amet consectetuer elit.</p>
+					</div>
+					<div class="spacer" data-height="20"></div>
+				</div>
+
+				<div class="col-md-4 col-sm-6"> -->
+					<!-- service item -->
+					<!-- <div class="service-item text-center">
+						<i class="icon-directions icon-simple"></i>
+						<h4 class="my-3">Advertising</h4>
+						<p class="mb-0">Lorem ipsum dolor sit amet consectetuer elit.</p>
+					</div>
+					<div class="spacer" data-height="20"></div>
+				</div>
+
+				<div class="col-md-4 col-sm-6"> -->
+					<!-- service item -->
+					<!-- <div class="service-item text-center">
+						<i class="icon-rocket icon-simple"></i>
+						<h4 class="my-3">SEO</h4>
+						<p class="mb-0">Lorem ipsum dolor sit amet consectetuer elit.</p>
+					</div>
+					<div class="spacer d-md-none d-lg-none" data-height="20"></div>
+				</div>
+
+				<div class="col-md-4 col-sm-6"> -->
+					<!-- service item -->
+					<!-- <div class="service-item text-center">
+						<i class="icon-note icon-simple"></i>
+						<h4 class="my-3">Copy Write</h4>
+						<p class="mb-0">Lorem ipsum dolor sit amet consectetuer elit.</p>
+					</div>
+					<div class="spacer d-md-none d-lg-none" data-height="20"></div>
+				</div>
+
+				<div class="col-md-4 col-sm-6"> -->
+					<!-- service item -->
+					<!-- <div class="service-item text-center">
+						<i class="icon-bubbles icon-simple"></i>
+						<h4 class="my-3">Support</h4>
+						<p class="mb-0">Lorem ipsum dolor sit amet consectetuer elit.</p>
+					</div>
+				</div>
+
+			</div>
+		</section> -->
+
+		<!-- section experience -->
+		<section id="erfarenhet" class="shadow-blue white-bg padding">
+			<h3 class="section-title">Erfarenhet</h3>
+			<div class="spacer" data-height="80"></div>
+
+			<!-- timeline -->
+			<div class="timeline">
+				<div class="entry">
+					<div class="title">
+						<span>2020 - Present</span>
+					</div>
+					<div class="body">
+						<h4 class="mt-0">Vertel AB</h4>
+						<p>Utveckling av affärssystem I Odoo. Jobbar just nu med ett CRM för Arbetsförmedlingen.</p>
+					</div>
+				</div>
+				<div class="entry">
+					<div class="title">
+						<span>2017 - 2019</span>
+					</div>
+					<div class="body">
+						<h4 class="mt-0">IFS</h4>
+						<p>Grafisk Designer. Supportade hela IFS med grafiskt material.</p>
+					</div>
+				</div>
+				<div class="entry">
+					<div class="title">
+						<span>1998 - 2015</span>
+					</div>
+					<div class="body">
+						<h4 class="mt-0">Larsson Offsettryck</h4>
+						<p>Reprotekniker</p>
+					</div>
+				</div>
+				<div class="entry">
+					<div class="title">
+						<span>1997 - 1998</span>
+					</div>
+					<div class="body">
+						<h4 class="mt-0">Effekt Reklambyrå</h4>
+						<p>Original och dekor</p>
+					</div>
+				</div>
+				<span class="timeline-line"></span>
+			</div>
+		</section>
+
+		<!-- section utbildning -->
+		<section id="utbildning" class="shadow-blue white-bg padding">
+			<h3 class="section-title">Utbildning</h3>
+			<div class="spacer" data-height="80"></div>
+
+			<!-- timeline -->
+			<div class="timeline">
+				<div class="entry">
+					<div class="title">
+						<span>2019</span>
+					</div>
+					<div class="body">
+						<h4 class="mt-0">Berghs School of Communication</h4>
+						<p>Gränssnittsdesign/UX</p>
+					</div>
+				</div>
+				<div class="entry">
+					<div class="title">
+						<span>2019</span>
+					</div>
+					<div class="body">
+						<h4 class="mt-0">TTR</h4>
+						<p>Projektledning</p>
+					</div>
+				</div>
+				<div class="entry">
+					<div class="title">
+						<span>2015 - 2017</span>
+					</div>
+					<div class="body">
+						<h4 class="mt-0">Mölk</h4>
+						<p>Mjukvaruutveckling</p>
+					</div>
+				</div>
+				<div class="entry">
+					<div class="title">
+						<span>1997 - 1998</span>
+					</div>
+					<div class="body">
+						<h4 class="mt-0">Forsbergs</h4>
+						<p>Grafisk Formgivning</p>
+					</div>
+				</div>
+				<div class="entry">
+					<div class="title">
+						<span>1996 - 1997</span>
+					</div>
+					<div class="body">
+						<h4 class="mt-0">Linköpings Universitet</h4>
+						<p>Litteraturvetenskap</p>
+					</div>
+				</div>
+				<div class="entry">
+					<div class="title">
+						<span>1995 - 1996</span>
+					</div>
+					<div class="body">
+						<h4 class="mt-0">P18 Gotland</h4>
+						<p>Gruppchef</p>
+					</div>
+				</div>
+				<div class="entry">
+					<div class="title">
+						<span>1994 - 1995</span>
+					</div>
+					<div class="body">
+						<h4 class="mt-0">RADa</h4>
+						<p>Data för Industri och Förvaltning</p>
+					</div>
+				</div>
+				<div class="entry">
+					<div class="title">
+						<span>1991 - 1994</span>
+					</div>
+					<div class="body">
+						<h4 class="mt-0">Hutsfreds Gymnasium</h4>
+						<p>3 årig Ekonomisk linje</p>
+					</div>
+				</div>
+				<span class="timeline-line"></span>
+			</div>
+		</section>
+
+		<!-- section works -->
+		<!-- <section id="works" class="shadow-blue white-bg padding">
+			<h3 class="section-title">Portfolio</h3>
+			<div class="spacer" data-height="80"></div> -->
+
+			<!-- portfolio filter (desktop) -->
+			<!-- <ul class="portfolio-filter list-inline">
+				<li class="current list-inline-item" data-filter="*">All Projects</li>
+				<li class="list-inline-item" data-filter=".branding">Branding</li>
+				<li class="list-inline-item" data-filter=".creative">Creative</li>
+				<li class="list-inline-item" data-filter=".design">Design</li>
+				<li class="list-inline-item" data-filter=".video">Video</li>
+			</ul> -->
+
+			<!-- portfolio filter (mobile) -->
+			<!-- <div class="pf-filter-wrapper mb-4">
+				<select class="portfolio-filter-mobile">
+					<option value="*">Everything</option>
+					<option value=".creative">Creative</option>
+					<option value=".video">Video</option>
+					<option value=".design">Design</option>
+					<option value=".branding">Branding</option>
+				</select>
+			</div> -->
+
+			<!-- portolio wrapper -->
+			<!-- <div class="row portfolio-wrapper"> -->
+				
+				<!-- portfolio item -->
+				<!-- <div class="col-md-4 col-sm-6 grid-item video">
+					<a href="work-single.html">
+						<div class="portfolio-item">
+							<div class="details">
+								<h4 class="title">Creative Art</h4>
+								<span class="term">Art, Creative</span>
+							</div>
+							<span class="plus-icon">+</span>
+							<div class="thumb">
+								<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+				</div> -->
+
+				<!-- portfolio item -->
+				<!-- <div class="col-md-4 col-sm-6 grid-item creative design">
+					<a href="work-single.html">
+						<div class="portfolio-item">
+							<div class="details">
+								<h4 class="title">Apple USB</h4>
+								<span class="term">Creative, Design</span>
+							</div>
+							<span class="plus-icon">+</span>
+							<div class="thumb">
+								<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+				</div> -->
+
+				<!-- portfolio item -->
+				<!-- <div class="col-md-4 col-sm-6 grid-item branding">
+					<a href="work-single.html">
+						<div class="portfolio-item">
+							<div class="details">
+								<h4 class="title">Work Space</h4>
+								<span class="term">Branding</span>
+							</div>
+							<span class="plus-icon">+</span>
+							<div class="thumb">
+								<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+				</div> -->
+
+				<!-- portfolio item -->
+				<!-- <div class="col-md-4 col-sm-6 grid-item creative">
+					<a href="work-single.html">
+						<div class="portfolio-item">
+							<div class="details">
+								<h4 class="title">Creative Bulb</h4>
+								<span class="term">Creative</span>
+							</div>
+							<span class="plus-icon">+</span>
+							<div class="thumb">
+								<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+				</div> -->
+
+				<!-- portfolio item -->
+				<!-- <div class="col-md-4 col-sm-6 grid-item video branding">
+					<a href="work-single.html">
+						<div class="portfolio-item">
+							<div class="details">
+								<h4 class="title">iPhone 8</h4>
+								<span class="term">Art, Branding</span>
+							</div>
+							<span class="plus-icon">+</span>
+							<div class="thumb">
+								<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+				</div> -->
+
+				<!-- portfolio item -->
+				<!-- <div class="col-md-4 col-sm-6 grid-item creative design">
+					<a href="work-single.html">
+						<div class="portfolio-item">
+							<div class="details">
+								<h4 class="title">Minimal Art</h4>
+								<span class="term">Design, Creative</span>
+							</div>
+							<span class="plus-icon">+</span>
+							<div class="thumb">
+								<img src="https://via.placeholder.com/800x600" alt="Portfolio-title" />
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+				</div>
+
+			</div> -->
+			
+			<!-- more button -->
+			<!-- <div class="load-more text-center mt-4">
+				<a href="javascript:" class="btn btn-default"><i class="fas fa-circle-notch"></i> Load more</a> -->
+				<!-- numbered pagination (hidden for infinite scroll) -->
+				<!-- <ul class="portfolio-pagination list-inline d-none">
+					<li class="list-inline-item">1</li>
+					<li class="list-inline-item"><a href="works-2.html">2</a></li>
+				</ul>
+			</div>
+		</section> -->
+
+		<!-- section pricing table -->
+		<!-- <section id="price" class="shadow-blue white-bg padding">
+			<h3 class="section-title">Pricing table</h3>
+			<div class="spacer" data-height="97"></div>
+
+			<div class="row">
+				
+				<div class="col-md-4 pr-md-0 mt-3"> -->
+					<!-- price item -->
+					<!-- <div class="price-item text-center">
+						<i class="price-icon icon-energy"></i>
+						<span class="plan">Basic</span>
+						<h3 class="price"><em>$</em>14<span>/mo</span></h3>
+						<div class="price-content">
+							<ul>
+								<li>Frontend Builder</li>
+								<li>Regular Support</li>
+								<li>1 Years of Updates</li>
+							</ul>
+						</div>
+						<a href="#" class="btn btn-default">Get Started</a>
+					</div>
+				</div>
+
+				<div class="col-md-4 px-md-0 my-5 my-md-0"> -->
+					<!-- price item -->
+					<!-- <div class="price-item text-center recommended">
+						<i class="price-icon icon-fire"></i>
+						<span class="plan">Professional</span>
+						<h3 class="price"><em>$</em>41<span>/mo</span></h3>
+						<div class="price-content">
+							<ul>
+								<li>Frontend Builder</li>
+								<li>Regular Support</li>
+								<li>2 Years of Updates</li>
+								<li>White Labeling</li>
+							</ul>
+						</div>
+						<a href="#" class="btn btn-default">Get Started</a>
+					</div>
+				</div>
+
+				<div class="col-md-4 pl-md-0 mt-0 mt-md-3"> -->
+					<!-- price item -->
+					<!-- <div class="price-item text-center">
+						<i class="price-icon icon-rocket"></i>
+						<span class="plan">Premium</span>
+						<h3 class="price"><em>$</em>99<span>/mo</span></h3>
+						<div class="price-content">
+							<ul>
+								<li>Frontend Builder</li>
+								<li>Regular Support</li>
+								<li>3 Years of Updates</li>
+							</ul>
+						</div>
+						<a href="#" class="btn btn-default">Get Started</a>
+					</div>
+				</div>
+
+			</div>
+		</section> -->
+
+		<!-- section testimonials -->
+		<!-- <section id="testimonials" class="shadow-blue white-bg padding">
+			<h3 class="section-title">Testimonials</h3>
+			<div class="spacer" data-height="97"></div>
+
+			<div class="row testimonials-wrapper">
+				
+				<div class="col-md-6"> -->
+					<!-- testimonial item -->
+					<!-- <div class="testimonial-item">
+						<span class="symbol"><i class="fas fa-quote-left"></i></span>
+						<p>I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck!</p>
+						<div class="testimonial-details">
+							<div class="thumb">
+								<img src="https://via.placeholder.com/40x40" alt="customer-name" />
+							</div>
+							<div class="info">
+								<h4>Helen Doe</h4>
+								<span>Themeforest customer</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6"> -->
+					<!-- testimonial item -->
+					<!-- <div class="testimonial-item">
+						<span class="symbol"><i class="fas fa-quote-left"></i></span>
+						<p>I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck!</p>
+						<div class="testimonial-details">
+							<div class="thumb">
+								<img src="https://via.placeholder.com/40x40" alt="customer-name" />
+							</div>
+							<div class="info">
+								<h4>Jane Doe</h4>
+								<span>Themeforest customer</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6"> -->
+					<!-- testimonial item -->
+					<!-- <div class="testimonial-item">
+						<span class="symbol"><i class="fas fa-quote-left"></i></span>
+						<p>I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck!</p>
+						<div class="testimonial-details">
+							<div class="thumb">
+								<img src="https://via.placeholder.com/40x40" alt="customer-name" />
+							</div>
+							<div class="info">
+								<h4>Helen Doe</h4>
+								<span>Themeforest customer</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section> -->
+
+		<!-- section clients -->
+		<!-- <section id="clients" class="shadow-dark background-blue color-white padding-50"> -->
+
+			<!-- hidden heading for validation -->
+			<!-- <h2 class="d-none">Clients</h2> -->
+
+			<!-- clients wrapper -->
+			<!-- <div class="clients-wrapper row">
+				
+				<div class="col-md-3"> -->
+					<!-- client item -->
+					<!-- <div class="client-item">
+						<div class="inner">
+							<img src="https://via.placeholder.com/143x20" alt="client-name" />
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3"> -->
+					<!-- client item -->
+					<!-- <div class="client-item">
+						<div class="inner">
+							<img src="https://via.placeholder.com/143x20" alt="client-name" />
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3"> -->
+					<!-- client item -->
+					<!-- <div class="client-item">
+						<div class="inner">
+							<img src="https://via.placeholder.com/143x20" alt="client-name" />
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-3"> -->
+					<!-- client item -->
+					<!-- <div class="client-item">
+						<div class="inner">
+							<img src="https://via.placeholder.com/143x20" alt="client-name" />
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3"> -->
+					<!-- client item -->
+					<!-- <div class="client-item">
+						<div class="inner">
+							<img src="https://via.placeholder.com/143x20" alt="client-name" />
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</section> -->
+
+		<!-- section blog -->
+		<!-- <section id="blog" class="shadow-blue white-bg padding">
+			<h3 class="section-title">Recent posts</h3>
+			<div class="spacer" data-height="80"></div>
+
+			<div class="row">
+				
+				<div class="col-md-4"> -->
+					<!-- blog item -->
+					<!-- <div class="blog-item">
+						<div class="thumb">
+							<a href="#">
+								<span class="category">Thoughts</span>
+							</a>
+							<a href="#">
+								<img src="https://via.placeholder.com/800x600" alt="blog-title" />
+							</a>
+						</div>
+						<h4 class="mt-4 mb-0"><a href="#">The Truth About Design In 3 Minutes</a></h4>
+						<ul class="list-inline meta mb-0 mt-3">
+							<li class="list-inline-item">13 March, 2019</li>
+							<li class="list-inline-item">Bako Doe</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-4"> -->
+					<!-- blog item -->
+					<!-- <div class="blog-item">
+						<div class="thumb">
+							<a href="#">
+								<span class="category">Blog</span>
+							</a>
+							<a href="#">
+								<img src="https://via.placeholder.com/800x600" alt="blog-title" />
+							</a>
+						</div>
+						<h4 class="mt-4 mb-0"><a href="#">The Ugly Truth About Design</a></h4>
+						<ul class="list-inline meta mb-0 mt-3">
+							<li class="list-inline-item">13 March, 2019</li>
+							<li class="list-inline-item">Bako Doe</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-4"> -->
+					<!-- blog item -->
+					<!-- <div class="blog-item">
+						<div class="thumb">
+							<a href="#">
+								<span class="category">Tech</span>
+							</a>
+							<a href="#">
+								<img src="https://via.placeholder.com/800x600" alt="blog-title" />
+							</a>
+						</div>
+						<h4 class="mt-4 mb-0"><a href="#">How To Become Better With UI Design</a></h4>
+						<ul class="list-inline meta mb-0 mt-3">
+							<li class="list-inline-item">13 March, 2019</li>
+							<li class="list-inline-item">Bako Doe</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+		</section> -->
+
+		<!-- section contact -->
+		<section id="contact" class="shadow-blue white-bg padding">
+			<h3 class="section-title">Hör av dig</h3>
+			<div class="spacer" data-height="80"></div>
+
+			<div class="row">
+				
+				<div class="col-md-4 mb-4 mb-md-0">
+					<!-- contact info -->
+					<div class="contact-info mb-5">
+						<i class="icon-phone"></i>
+						<div class="details">
+							<h5>Telefon</h5>
+							<span>073 687 40 04</span>
+						</div>
+					</div>
+					<div class="contact-info mb-5">
+						<i class="icon-envelope"></i>
+						<div class="details">
+							<h5>Email</h5>
+							<span>robfro@me.com</span>
+						</div>
+					</div>
+					<div class="contact-info">
+						<i class="icon-location-pin"></i>
+						<div class="details">
+							<h5>Bostad</h5>
+							<span>Stjärnorpsvägen 45 <br>585 77 Vreta Kloster</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-8">
+					<!-- Contact Form -->
+					<form id="contact-form" class="contact-form" data-toggle="validator" role="form" method="post" action="form/contact.php">
+						
+						<div class="messages"></div>
+						
+						<div class="row">
+							<div class="column col-md-6">
+								<!-- Name input -->
+								<div class="form-group">
+									<input type="text" class="form-control" name="InputName" id="InputName" placeholder="Ditt namn" required="required" data-error="Name is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+							
+							<div class="column col-md-6">
+								<!-- Email input -->
+								<div class="form-group">
+									<input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Email" required="required" data-error="Email krävs.">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+
+							<div class="column col-md-12">
+								<!-- Email input -->
+								<div class="form-group">
+									<input type="text" class="form-control" id="InputSubject" name="InputSubject" placeholder="Ämne" required="required" data-error="Ämne krävs.">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+					
+							<div class="column col-md-12">
+								<!-- Message textarea -->
+								<div class="form-group">
+									<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" placeholder="Meddelande" required="required" data-error="Meddelande krävs."></textarea>
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+						</div>
+
+						<button type="submit" name="submit" id="submit" value="Submit" class="btn btn-default"><i class="icon-paper-plane"></i>Skicka meddelande</button><!-- Send Button -->
+
+					</form>
+					<!-- Contact Form end -->
+				</div>
+
+			</div>
+
+		</section>
+		
+	</main>
+
+</div>
+
+<!-- Go to top button -->
+<a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- SCRIPTS -->
+<script src="js/jquery-1.12.3.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/infinite-scroll.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/validator.js"></script>
+<script src="js/custom.js"></script>
 
 </body>
-
 </html>
